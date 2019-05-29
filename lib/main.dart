@@ -70,7 +70,11 @@ class Home extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             Container(
-                              child: Text(foods[index].title),
+                              child: Text(
+                                foods[index].title,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w500, fontSize: 18),
+                              ),
                             ),
                             Container(
                               margin: EdgeInsets.only(top: 4),
